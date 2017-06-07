@@ -61,3 +61,44 @@ ul{
 	border-color:transparent transparent transparent #ccc;
 	left:-21px;
 }
+
+/*当前状态*/
+.step-case .s-cur span{
+	background-color: orange;
+}
+.step-case .s-cur .b-left{
+	border-right-color: orange;
+}
+.step-case .s-cur .b-right{
+	border-left-color: orange;
+}
+
+.step-case .s-cur .b-1{
+	border-color: orange;
+}
+.step-case .s-cur .b-2{
+	border-left-color: #fadba5;
+}
+
+
+/*当前状态后*/
+.step-case .s-cur-next .b-2{
+	border-color:transparent;
+	border-left-color: orange;
+}
+
+/*完成的状态*/
+.step-case .s-finish span{
+	background-color: #fadba5;
+	color:#000;
+}
+.step-case .s-finish .b-left{
+	border-right-color:#fadba5;
+}	
+.step-case .s-finish .b-1{
+	border-color:#fadba5;
+	border-left-color:#fabf55;
+}
+.step-case .s-finish .b-2{
+	border-left-color:#fadba5;
+}
