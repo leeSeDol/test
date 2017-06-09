@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<div class="before"></div>
+	<ul class="nav">
+		<li>
+			<span>记者</span>
+			<div class="explainDiv">
+				<h1>First</h1>
+			</div>
+		</li>
+		<li>
+			<span>赛艇</span>
+			<div class="explainDiv">
+				<h1>Second</h1>
+			</div>
+		</li>
+		<li>
+			<span>跑得快</span>
+			<div class="explainDiv">
+				<h1>Third</h1>
+			</div>
+		</li>
+		<li>
+			<span>蛤蛤</span>
+			<div class="explainDiv">
+				<h1>fourth</h1>
+			</div>
+		</li>
+		<li>
+			<span>江里</span>
+			<div class="explainDiv">
+				<h1>fifth</h1>
+			</div>
+		</li>
+		<li>
+			<span>蛤蟆</span>
+			<div class="explainDiv">
+				<h1>sixth</h1>
+			</div>
+		</li>
+		<li>
+			<span class="lastSpan">谈笑风生</span>
+			<div class="explainDiv">
+				<h1>seventh</h1>
+			</div>
+		</li>
+	</ul>
+<script>
+$("ul.nav li").hover(function(){
+	$(this).find("div").animate({
+		"opacity":1
+	},500);
+},function(){
+	$(this).find("div").animate({
+		"opacity":0
+	},1000);
+});
+</script>
+</body>
+</html>
