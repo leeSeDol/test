@@ -1,0 +1,23 @@
+<html>
+<head> <meta charset="utf-8">
+<script src="https://olpnhrh8v.qnssl.com/0623pc/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function tjzs(){
+  var count = $("#nr").val().length;
+   if(count>300){
+	    var nr = $("#nr").val().substring(0,300);
+		$("#nr").val(nr);
+		count=300;
+		alert("超出限制")
+	}
+	$("#zs").text(count);
+}
+</script>
+</head>
+<body>
+<div style="72px;width:202px;" >
+<textarea id="nr" style="height:70px;width:200px;" onkeyup="tjzs()" onpropertychange="if (value.length>300) value=value.substring(0,300)"></textarea>
+字数限制：<div id="zs">0</div>/300
+</div>
+</body>
+</html> 
