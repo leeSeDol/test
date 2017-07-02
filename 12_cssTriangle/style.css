@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+.outer{
+	padding:50px;
+	font-size:24px;
+	line-height:40px;
+}
+.content{
+	width:0;
+	height:0;
+	font-size:0px;
+	line-height:0;
+}
+.content1{
+	border-style:solid;
+	border-width:0px 100px 100px 100px;
+	border-color:transparent transparent #c96 transparent;
+}
+.content2{
+	border-style:solid;
+	border-width:100px 0 100px 100px;
+	border-color:transparent transparent transparent #6c9;
+}
+.content3{
+	border-style:solid;
+	border-width:100px 100px 100px 100px;
+	border-color:transparent #9c6 #9c6 transparent;
+}
+.content4{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	border-style:solid;
+	border-width:80px 80px 80px 80px;
+	border-color:#c96 #9c6 #456 #c69;
+}
