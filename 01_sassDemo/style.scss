@@ -1,0 +1,98 @@
+*{
+	margin:0;
+	padding:0;
+}
+$greenColor:#31c27c;
+#main p{
+	color:#ccc;
+	width:100%;
+
+	.redux{
+		background-color: $greenColor;
+	}
+}
+#main{
+	a{
+		color:$greenColor;
+		font-size:14px;
+		&:hover{
+			color:#000;
+		}
+	}
+	&{
+		background-color:$greenColor;
+	}
+}
+$black:#000;
+#main{
+	color:$black;
+	&-sidebar{
+		border:1px solid #ccc;
+	}
+}
+.funky{
+	font:{
+		family:sans-serif;
+		size:15px;
+		weight:bolder;
+	}
+}
+.fans{
+	font:20px/24px{
+		family:sans-serif;
+		weight:bolder;
+	}
+}
+/* 混合器 */
+@mixin rounded-corners{
+	border:2px solid $black;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+.notice{
+	background-color: $black;
+	@include rounded-corners;
+}
+.click{
+	@include rounded-corners;
+}
+
+@mixin no-bullets{
+	list-style:none;
+	li{
+		list-style-image:none;
+		list-style-type:none;
+		margin-left:0px;
+	}
+}
+ul.plain{
+	color:#444;
+	@include no-bullets;
+}
+
+@mixin link-colors($normal ,$hover ,$visited){
+	color:$normal;
+	&:hover {
+		color: $hover;
+	}
+	&:visited {
+		color: $visited;
+	}
+}
+a{
+	@include link-colors(#ccc,#e32,#31c);
+}
+
+@mixin colors(
+	$normal,
+	$hover:$greenColor
+){
+	color:$normal;
+	&:hover{
+		color:$hover;
+	}
+}
+.plugin p{
+	@include colors(#c31);
+}
