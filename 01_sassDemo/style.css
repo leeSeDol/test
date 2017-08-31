@@ -1,0 +1,88 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main p {
+  color: #ccc;
+  width: 100%;
+}
+#main p .redux {
+  background-color: #31c27c;
+}
+
+#main a {
+  color: #31c27c;
+  font-size: 14px;
+}
+#main a:hover {
+  color: #000;
+}
+#main {
+  background-color: #31c27c;
+}
+
+#main {
+  color: #000;
+}
+#main-sidebar {
+  border: 1px solid #ccc;
+}
+
+.funky {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.fans {
+  font: 20px/24px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+/* 混合器 */
+.notice {
+  background-color: #000;
+  border: 2px solid #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.click {
+  border: 2px solid #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+ul.plain {
+  color: #444;
+  list-style: none;
+}
+ul.plain li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+a {
+  color: #ccc;
+}
+a:hover {
+  color: #e32;
+}
+a:visited {
+  color: #31c;
+}
+
+.plugin p {
+  color: #c31;
+}
+.plugin p:hover {
+  color: #31c27c;
+}
+
+/*# sourceMappingURL=style.css.map */
